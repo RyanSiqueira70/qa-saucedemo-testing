@@ -129,3 +129,30 @@ Ao clicar em "continue" sem preencher os campos, o sistema permaneceu na página
 
 ### Status
 **PASSOU**
+
+
+### CT-006 - Validação do campo Last Name
+
+### Objetivo 
+Verificar se o sistema impede o usuário de prosseguir quando o campo "Last Name" não é preenchido.
+
+### Pré-condições 
+- Usuário autenticado na aplicação.
+- Produto Sauce Labs Backpack adicionado ao carrinho.
+- Usuário na página de informações do checkout.
+
+### Passos 
+1.  Preencher o campo "First Name" com "Ryan".
+2. Deixar o campo "Last Name" vazio.
+3. Deixar o campo "Zip/Postal Code" vazio.
+4. Clicar no botão "Continue"
+5. Verificar a mensagem de erro apresentado.
+
+### Resultado esperado
+O sistema deve impedir o usuário de prosseguir e informar que o campo "Last Name" é obrigatório.
+
+### Resultado obtido
+Após preencher somente o campo "First Name" e clicar em "Continue", o sistema permaneceu na página de checkout e apresentou a mensagem "Error: Last Name is required".
+
+### Status
+**PASSOU**
