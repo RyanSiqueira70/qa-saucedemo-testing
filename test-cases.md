@@ -183,3 +183,37 @@ Após preencher os campos "First Name" e "Last Name" e clicar em "Continue", o s
 
 ### Status
 **PASSOU**
+
+
+## CT-008 - Checkout com dados válidos 
+
+### Objetivo
+Verificar se o usuário consegue avançar no checkout após preencher corretamente todos os campos obrigatórios e se as informações do pedido são apresentadas corretamente.
+
+### Pré-condições 
+- Usuário autenticado na aplicação.
+- Produto  Sauce Labs Backpack adicionado ao carrinho.
+- Usuário na página de informações do checkout.
+
+### Passos
+1. Preencher o campo "First Name" com "Ryan".
+2. Preencher o campo "Last Name" com "Siqueira".
+3. Preencher o campo "Zip/Postal Code" com "16310000".
+4. Clicar no botão "Continue". 
+5. Verificar as informações do pedido.
+6. Conferir a quantidade do produto.
+7. Conferir o preço do produto.
+8. Conferir o valor da taxa.
+9. Conferir o valor total da compra.
+10. Verificar o método de pagamento e as informações de entrega.
+
+### Resultado esperado
+O sistema deve permitir o avanço para a página de resumo do pedido e apresentar corretamente as informações da compra, incluindo quantidade, preço do produto, taxa, valor total, método de pagamento e forma de entrega.  
+
+### Resultado obtido
+Após preencher todos os campos obrigatórios, o sistema direcionou o usuário para a página de resumo do pedido.
+Foi apresentada a quantidade correta de 1 unidade e o preço de $29.99. Também foi apresentada uma taxa de $2.40, resultando no total de $32.39.
+O método de pagamento apresentado foi SauceCard e a entrega foi informado como "Free Pny Express Delivery".
+
+### Status
+**PASSOU**
