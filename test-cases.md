@@ -75,4 +75,30 @@ O produto adicionado anteriormente deve permanecer no carrinho após o novo logi
 Após realizar um novo login, o produto Sauce Labs Backpack permaneceu no carrinho, mantendo o estado anterior.
 
 ### Status
-**PASSOU*
+*PASSOU*
+
+
+## CT-004 - Remover produto do carrinho
+
+### Objetivo
+Verificar se o usuário consegue remover um produto do carrinho corretamente 
+
+### Pré-condições 
+- Produto Sauce Labs Backpack adicionado ao carrinho.
+
+### Passos
+1. Acessar o carrinho.
+2. Verificar se o produto Sauce Labs Backpack está presente.
+3. Clicar no botão "Remove".
+4. Verificar se o carrinho ficou vazio.
+5. Retornar à página de produtos.
+6. Verificar se o botão do produto voltou para "Add to cart".
+
+### Resultado esperado
+O produto deve ser removido do carrinho e o botão na página de produtos deve voltar para "Add to cart", permitindo que o produto seja adicionado novamente.
+
+### Resultado obtido 
+Ao clicar em "remove", o produto foi removido corretamente e o carrinho ficou vazio. Ao retornar à página de produtos, o botão voltou para "Add to cart".
+
+### Status
+**PASSOU**
