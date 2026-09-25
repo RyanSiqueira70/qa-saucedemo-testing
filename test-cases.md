@@ -267,3 +267,30 @@ Após clicar em "Finish", o sistema apresentou a mensagem "Thank you for your or
 
 ### Status
 **PASSOU**
+
+
+## Ct-011 - Geração do PDF do pedido
+
+### Objetivo 
+Verificar se o sistema gera corretamente o PDF com os dados do pedido.
+
+### Pré-condições 
+- Pedido finalizado com sucesso.
+- Usuário na página de confirmação do pedido.
+
+### Passos
+1. Clicar no botão "Generate PDF Order".
+2. Abrir o PDF gerado.
+3. Verificar os dados do pedido.
+4. Conferir o produto e o preço.
+5. Conferir a taxa e o valor total.
+6. Verificar os dados de entrega.
+
+### Resultado esperado
+O sistema deve gerar um PDF contendo corretamente as informações do pedido, incluindo produto, preço, taxa, valor total e dados de entrega.
+
+### Resultado obtido 
+O PDF foi gerado corretamente e apresentou as informações do pedido, incluindo o produto Sauce Labs Backpack, preço de $29.99, taxa de $2.40, total de $32.39, nome do cliente e código postal informado.
+
+### Status
+**PASSOU**
