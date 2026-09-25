@@ -102,3 +102,30 @@ Ao clicar em "remove", o produto foi removido corretamente e o carrinho ficou va
 
 ### Status
 **PASSOU**
+
+
+## CT-005 - Validação dos campos obrigatórios no checkout
+
+### Objetivo 
+Verificar se o sistema impede o usuário de prosseguir com o checkout quando os campos obrigatórios não são preenchidos.
+
+### Pré-condições 
+- Usuário autenticado na aplicação.
+- Produto Sauce Labs Backpack adicionado ao carrinho.
+
+### Passos
+1. Acessar o carrinho.
+2. Clicar no botão "Checkout".
+3. Verificar se a página de informações do checkout é exibida.
+4. Não preencher nenhum dos campos obrigatórios.
+5. Clicar no botão "Continue".
+6. Verificar a mensagem de erro apresentada.
+
+### Resultado esperado
+O sistema deve impedir o usuário de prosseguir com o checkout e informar que o campo obrigatório "First Name" precisa ser preenchido.
+
+### Resultado obtido
+Ao clicar em "continue" sem preencher os campos, o sistema permaneceu na página de informações do checkout e apresentou a mensagem "Error: First Name is required"
+
+### Status
+**PASSOU**
