@@ -14,7 +14,7 @@ Verificar se o usuário consegue adicionar um produto ao carrinho corretamente.
 ### Passos
 1. Localizar o produto Sauce Labs Backpack.
 2. Clicar no botão "add to cart".
-3. acessar o carrinho.
+3. Acessar o carrinho.
 4. Verificar se o produto foi adicionado.
 
 ### Resultado esperado
