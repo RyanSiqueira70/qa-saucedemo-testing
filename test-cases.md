@@ -217,3 +217,28 @@ O método de pagamento apresentado foi SauceCard e a entrega foi informado como 
 
 ### Status
 **PASSOU**
+
+
+## CT-009 - Validação do resumo do pedido
+
+### Objetivo
+Verificar se o resumo do pedido apresenta corretamente os valores da compra.
+
+### Pré-condições 
+- Produto Sauce Labs Backpack no checkout.
+- Dados do cliente preenchidos corretamente.
+
+### Passos 
+1. Acessar o resumo do pedido.
+2. Conferir o preço do produto.
+3. Conferir a taxa.
+4. Conferir o valor total.
+
+### Resultado esperado
+O sistema deve apresentar corretamente o item, a taxa e o valor total da compra.
+
+### Resultado obtido
+O produto foi apresentado por $29.99, a taxa por $2.40 e o total por $32.39.
+
+### Status
+**PASSOU**
