@@ -242,3 +242,28 @@ O produto foi apresentado por $29.99, a taxa por $2.40 e o total por $32.39.
 
 ### Status
 **PASSOU**
+
+
+## CT-010 - Finalização da compra
+
+### Objetivo
+Verificar se o sistema confirma corretamente a finalização do pedido.
+
+### Pré-condições 
+- Pedido preenchido e pronto para finalização.
+
+### Passos 
+1. Acessar a página de resumo do pedido.
+2. Clicar no botão "Finish"
+3. Verificar a mensagem de confirmação de compra.
+4. Verificar se o botão "Back Home" é apresentada.
+5. Verificar se a opção "Generate PDF Order" é apresentada.
+
+### Resultado esperado
+O sistema deve finalizar o pedido e apresentar uma mensagem de confirmação disponibilizando as opções de retornar à página inicial e gerar o PDF do pedido.
+
+### Resultado obtido 
+Após clicar em "Finish", o sistema apresentou a mensagem "Thank you for your order" e disponibilizou os botões "Back Home" e "Generate PDF Order".
+
+### Status
+**PASSOU**
