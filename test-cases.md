@@ -156,3 +156,30 @@ Após preencher somente o campo "First Name" e clicar em "Continue", o sistema p
 
 ### Status
 **PASSOU**
+
+
+## CT-007 - Validação do campo Zip/Postal Code
+
+### Objetivo 
+Verificar se o sistema impede o usuário de prosseguir quando o campo "Zip/Postal Code" não é preenchido.
+
+### Pré-condições 
+- Usuário autenticado na aplicação.
+- Produto Sauce Labs Backpack adicionado ao carrinho.
+- Usuário na página de informações do checkout.
+
+### Passos
+1. Preencher o campo "First Name" com "Ryan".
+2. Preencher o campo "Last Name" com "Siqueira".
+3. Deixar o campo "Zip/Postal Code" vazio.
+4. Clicar no botão "Continue".
+5. Verificar a mensagem de erro apresentada.
+
+### Resultado esperado
+O sistema deve impedir o usuário de prosseguir e informar que o campo "Postal Code" é obrigatório.
+
+### Resultado obtido
+Após preencher os campos "First Name" e "Last Name" e clicar em "Continue", o sistema permaneceu na página de checkout e apresentou a mensagem "Error: Postal Code is required".
+
+### Status
+**PASSOU**
