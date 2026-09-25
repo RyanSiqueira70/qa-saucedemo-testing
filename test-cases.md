@@ -52,3 +52,27 @@ No carrinho também não foi encontrada uma opção para aumentar a quantidade d
 
 ### Status
 **OBSERVAÇÃO FUNCIONAL**
+
+
+## CT-003 - Persistência do carrinho após novo login
+
+### Objetivo 
+Verificar se o produto adicionado ao carrinho permanece disponível após realizar novo login na aplicação.
+
+### Pré-condições
+- Produto Sauce Labs Backpack adicionado ao carrinho.
+
+### Passos
+1. Após ser desconectado da aplicação, acessar novamente a página de login. 
+2. Realizar login com as credenciais válidas.
+3. Acessar o carrinho.
+4. Verificar se o produto anteriormente adicionado permanece no carrinho.
+
+### Resultado esperado
+O produto adicionado anteriormente deve permanecer no carrinho após o novo login.
+
+### Resultado obtido 
+Após realizar um novo login, o produto Sauce Labs Backpack permaneceu no carrinho, mantendo o estado anterior.
+
+### Status
+**PASSOU*
